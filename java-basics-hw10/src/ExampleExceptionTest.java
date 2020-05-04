@@ -1,8 +1,6 @@
-import static com.sun.org.apache.xerces.internal.util.PropertyState.is;
 import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.fail;
 
-import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
@@ -18,8 +16,8 @@ public class ExampleExceptionTest {
     return new Object[][]{
         {2, 2, 4},
         {2, 3, 6},
-            {12, 23, 276},
-            {30, 10, 300}
+        {12, 23, 276},
+        {30, 10, 300}
     };
   }
 
@@ -33,8 +31,8 @@ public class ExampleExceptionTest {
     return new Object[][]{
         {-2, 2},
         {2, -2},
-            {0, -1},
-            {-2, -2}
+        {0, -1},
+        {-2, -2}
     };
   }
 
@@ -51,7 +49,7 @@ public class ExampleExceptionTest {
       int e = ExampleException.rectangleArea(a, b);
       fail("Expected an IllegalArgumentException to be thrown");
     } catch (IllegalArgumentException anIllegalArgumentException) {
-      assertEquals(anIllegalArgumentException.getMessage(), "At least one parameter is not valid!");
+      assertEquals(anIllegalArgumentException.getMessage(), "input value is below zero!");
     }
   }
 }

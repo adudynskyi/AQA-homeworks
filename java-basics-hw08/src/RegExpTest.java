@@ -18,8 +18,11 @@ public class RegExpTest {
         {"This text contains a valid IP address 254.254.254.254, find it!", "254.254.254.254"},
         {"IP could not have negative numbers like -1.-2.-3.-4", ""},
         {" Invalid IP: 300.300.300.300!", ""},
-            {"Please access your IP address: 192.101.0101.", ""},
-            {"192.168.0.101:8000", ""}
+        {"Please access your IP address: 192.101.0101.", ""},
+        {"192.168.0.101:8000", ""},
+        {"300.300.300.300", ""},
+        {"256.256.256.256", ""},
+        {"invalid:256.256.256.256", ""}
     };
   }
 

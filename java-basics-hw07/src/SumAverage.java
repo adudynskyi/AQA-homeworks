@@ -41,9 +41,8 @@ public class SumAverage {
    */
   public static double average(int lowerBound, int upperBound) {
     double avg = 0;
-    while (lowerBound <= upperBound) {
+    if (lowerBound <= upperBound) {
       avg = (double) (lowerBound + upperBound) / 2;
-      break;
     }
     return avg;
   }

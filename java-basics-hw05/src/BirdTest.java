@@ -15,10 +15,10 @@ public class BirdTest {
   @Test()
   public void testBird() {
     assertTrue(Modifier.isAbstract(Bird.class.getModifiers()), "Bird class is not abstract");
-    }
+  }
 
-    @Test()
-    public void testFlyingBird() {
+  @Test()
+  public void testFlyingBird() {
     assertTrue(Modifier.isAbstract(FlyingBird.class.getModifiers()),
             "Bird class is not abstract");
 
@@ -28,17 +28,17 @@ public class BirdTest {
 
   @Test()
   public void testNonFlyingBird() {
-  assertTrue(Modifier.isAbstract(NonFlyingBird.class.getModifiers()),
-          "Bird class is not abstract");
+    assertTrue(Modifier.isAbstract(NonFlyingBird.class.getModifiers()),
+            "Bird class is not abstract");
 
-  assertTrue(Bird.class.isAssignableFrom(NonFlyingBird.class),
-          "NonFlyingBird class does not extend Bird class");
+    assertTrue(Bird.class.isAssignableFrom(NonFlyingBird.class),
+            "NonFlyingBird class does not extend Bird class");
   }
 
   @Test
   public void testAcceptDeclaration() {
     Method[] methods = Zoo.class.getDeclaredMethods();
-    for (Method method : methods) {
+    for (Method method: methods) {
       if ("acceptBird".equals(method.getName())) {
         Type[] types = method.getGenericParameterTypes();
         assertTrue(types[0].getTypeName().contains("FlyingBird"),
@@ -52,25 +52,25 @@ public class BirdTest {
 
   @Test
   public void testFeed() {
-    List<Eagle> eagles = new ArrayList<>();
+    List < Eagle > eagles = new ArrayList < > ();
     eagles.add(new Eagle());
     Zoo.feed(eagles);
 
     assertEquals(eagles.get(0).toString(), "Eagle", TO_STRING_INCORRECT);
 
-    List<Swallow> swallows = new ArrayList<>();
+    List < Swallow > swallows = new ArrayList < > ();
     swallows.add(new Swallow());
     Zoo.feed(swallows);
 
     assertEquals(swallows.get(0).toString(), "Swallow", TO_STRING_INCORRECT);
 
-    List<Penguin> penguins = new ArrayList<>();
+    List < Penguin > penguins = new ArrayList < > ();
     penguins.add(new Penguin());
     Zoo.feed(penguins);
 
     assertEquals(penguins.get(0).toString(), "Penguin", TO_STRING_INCORRECT);
 
-    List<Kiwi> kiwis = new ArrayList<>();
+    List < Kiwi > kiwis = new ArrayList < > ();
     kiwis.add(new Kiwi());
     Zoo.feed(kiwis);
 
@@ -79,7 +79,7 @@ public class BirdTest {
 
   @Test
   public void testAccept() {
-    List<Bird> birds = new ArrayList<>();
+    List < Bird > birds = new ArrayList < > ();
     Zoo.acceptBird(birds, new Eagle());
     Zoo.acceptBird(birds, new Swallow());
 
@@ -90,7 +90,7 @@ public class BirdTest {
 
   @Test
   public void testRegister() {
-    List<Bird> birds = new ArrayList<>();
+    List < Bird > birds = new ArrayList < > ();
     Zoo.registerBird(birds, new Eagle());
     Zoo.registerBird(birds, new Swallow());
     Zoo.registerBird(birds, new Penguin());

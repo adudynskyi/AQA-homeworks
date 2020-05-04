@@ -1,6 +1,6 @@
 public class Swallow extends FlyingBird {
-  @Override
-  public String toString() {
-      return "Swallow";
-  }
+    @Override
+    public String toString() {
+        return "Swallow";
+    }
 }
