@@ -1,0 +1,35 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Test Suite" verbose="1" >
+    <test name="Simple Test" >
+        <classes>
+            <class name="gradle.testng.SimpleTest" />
+        </classes>
+    </test>
+    <test name="Entry suite" >
+        <groups>
+            <run>
+                <include name="entry" />
+                <include name="general" />
+            </run>
+        </groups>
+        <classes>
+            <class name="gradle.testng.GroupsTest">
+                <methods>
+                    <exclude name="TestAppHasAGreeting" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="Parametrized Test">
+        <parameter name="firstname" value="Alex" />
+        <parameter name="lastname" value="Dudynskyi" />
+        <classes>
+            <class name="gradle.testng.ParametrizedTest" />
+        </classes>
+    </test>
+    <test name="Priority Test" >
+        <classes>
+            <class name="gradle.testng.PriorityTest" />
+        </classes>
+    </test>
+</suite>
