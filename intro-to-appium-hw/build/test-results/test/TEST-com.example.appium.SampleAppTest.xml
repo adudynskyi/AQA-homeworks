@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.example.appium.SampleAppTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-05-17T09:09:27" hostname="Oleksandr.Dudynskyi" time="2.568">
+  <properties/>
+  <testcase name="textFieldTest" classname="com.example.appium.SampleAppTest" time="2.568"/>
+  <system-out><![CDATA[?[35m[Appium]?[39m Welcome to Appium v1.17.1
+?[35m[Appium]?[39m Non-default server args:
+?[35m[Appium]?[39m   port: 41234
+?[35m[Appium]?[39m Appium REST http interface listener started on 0.0.0.0:41234
+?[35m[HTTP]?[39m ?[37m-->?[39m ?[37mGET?[39m ?[37m/wd/hub/status?[39m
+?[35m[HTTP]?[39m ?[90m{}?[39m
+[debug] ?[35m[GENERIC]?[39m Calling AppiumDriver.getStatus() with args: []
+[debug] ?[35m[GENERIC]?[39m Responding to client with driver.getStatus() result: {"build":{"version":"1.17.1"}}
+?[35m[HTTP]?[39m ?[37m<-- GET /wd/hub/status ?[39m?[32m200?[39m ?[90m6 ms - 68?[39m
+?[35m[HTTP]?[39m ?[90m?[39m
+?[35m[HTTP]?[39m ?[37m-->?[39m ?[37mGET?[39m ?[37m/wd/hub/status?[39m
+?[35m[HTTP]?[39m ?[90m{}?[39m
+[debug] ?[35m[GENERIC]?[39m Calling AppiumDriver.getStatus() with args: []
+[debug] ?[35m[GENERIC]?[39m Responding to client with driver.getStatus() result: {"build":{"version":"1.17.1"}}
+?[35m[HTTP]?[39m ?[37m<-- GET /wd/hub/status ?[39m?[32m200?[39m ?[90m2 ms - 68?[39m
+?[35m[HTTP]?[39m ?[90m?[39m
+?[35m[HTTP]?[39m ?[37m-->?[39m ?[37mPOST?[39m ?[37m/wd/hub/session?[39m
+?[35m[HTTP]?[39m ?[90m{"desiredCapabilities":{"app":"/Users/dudynskyi/IdeaProjects/AQA-homeworks/intro-to-appium-hw/TestApp.app.zip","platformVersion":"11.3.1","automationName":"XCuiTest","platformName":"iOS","udid":"2FC4280D-EB6C-4306-B76A-82B6D37CFD1B","deviceName":"iPhone 11 (13.3)"},"capabilities":{"firstMatch":[{"appium:app":"/Users/dudynskyi/IdeaProjects/AQA-homeworks/intro-to-appium-hw/TestApp.app.zip","appium:automationName":"XCuiTest","appium:deviceName":"iPhone 11 (13.3)","platformName":"ios","appium:platformVersion":"11.3.1","appium:udid":"2FC4280D-EB6C-4306-B76A-82B6D37CFD1B"}]}}?[39m
+[debug] ?[35m[W3C]?[39m Calling AppiumDriver.createSession() with args: [{"app":"/Users/dudynskyi/IdeaProjects/AQA-homeworks/intro-to-appium-hw/TestApp.app.zip","platformVersion":"11.3.1","automationName":"XCuiTest","platformName":"iOS","udid":"2FC4280D-EB6C-4306-B76A-82B6D37CFD1B","deviceName":"iPhone 11 (13.3)"},null,{"firstMatch":[{"appium:app":"/Users/dudynskyi/IdeaProjects/AQA-homeworks/intro-to-appium-hw/TestApp.app.zip","appium:automationName":"XCuiTest","appium:deviceName":"iPhone 11 (13.3)","platformName":"ios","appium:platformVersion":"11.3.1","appium:udid":"2FC4280D-EB6C-4306-B76A-82B6D37CFD1B"}]}]
+[debug] ?[35m[BaseDriver]?[39m Event 'newSessionRequested' logged at 1589706437367 (12:07:17 GMT+0300 (Eastern European Summer Time))
+?[35m[Appium]?[39m Appium v1.17.1 creating new XCUITestDriver (v3.22.0) session
+[debug] ?[35m[BaseDriver]?[39m W3C capabilities and MJSONWP desired capabilities were provided
+[debug] ?[35m[BaseDriver]?[39m Creating session with W3C capabilities: {
+[debug] ?[35m[BaseDriver]?[39m   "alwaysMatch": {
+[debug] ?[35m[BaseDriver]?[39m     "platformName": "ios",
+[debug] ?[35m[BaseDriver]?[39m     "appium:app": "/Users/dudynskyi/IdeaProjects/AQA-homeworks/intro-to-appium-hw/TestApp.app.zip",
+[debug] ?[35m[BaseDriver]?[39m     "appium:automationName": "XCuiTest",
+[debug] ?[35m[BaseDriver]?[39m     "appium:deviceName": "iPhone 11 (13.3)",
+[debug] ?[35m[BaseDriver]?[39m     "appium:platformVersion": "11.3.1",
+[debug] ?[35m[BaseDriver]?[39m     "appium:udid": "2FC4280D-EB6C-4306-B76A-82B6D37CFD1B"
+[debug] ?[35m[BaseDriver]?[39m   },
+[debug] ?[35m[BaseDriver]?[39m   "firstMatch": [
+[debug] ?[35m[BaseDriver]?[39m     {}
+[debug] ?[35m[BaseDriver]?[39m   ]
+[debug] ?[35m[BaseDriver]?[39m }
+?[35m[BaseDriver]?[39m Session created with session id: f8c55606-a02e-4b57-98cd-0576a6a1a455
+[debug] ?[35m[XCUITest]?[39m Current user: 'dudynskyi'
+[debug] ?[35m[XCUITest]?[39m Available devices: 
+[debug] ?[35m[XCUITest]?[39m No real device with udid '2FC4280D-EB6C-4306-B76A-82B6D37CFD1B'. Looking for simulator
+?[35m[iOSSim]?[39m Constructing iOS simulator for Xcode version 11.3.1 with udid '2FC4280D-EB6C-4306-B76A-82B6D37CFD1B'
+?[35m[XCUITest]?[39m Determining device to run tests on: udid: '2FC4280D-EB6C-4306-B76A-82B6D37CFD1B', real device: false
+?[35m[XCUITest]?[39m Normalized platformVersion capability value '11.3.1' to '11.3'
+[debug] ?[35m[BaseDriver]?[39m Event 'xcodeDetailsRetrieved' logged at 1589706438307 (12:07:18 GMT+0300 (Eastern European Summer Time))
+?[35m[BaseDriver]?[39m Using local app '/Users/dudynskyi/IdeaProjects/AQA-homeworks/intro-to-appium-hw/TestApp.app.zip'
+[debug] ?[35m[BaseDriver]?[39m Unzipping '/Users/dudynskyi/IdeaProjects/AQA-homeworks/intro-to-appium-hw/TestApp.app.zip'
+[debug] ?[35m[Support]?[39m Traversed 6 directories and 11 files in 6ms
+[debug] ?[35m[BaseDriver]?[39m Extracted 17 item(s) from '/Users/dudynskyi/IdeaProjects/AQA-homeworks/intro-to-appium-hw/TestApp.app.zip'
+[debug] ?[35m[Support]?[39m Traversed 6 directories and 11 files in 6ms
+[debug] ?[35m[BaseDriver]?[39m Matched 16 item(s) in the extracted archive. Assuming 'TestApp.app' is the correct bundle
+?[35m[BaseDriver]?[39m Unzipped local app to '/var/folders/d_/4fj98lg114zg894kw4ngrn7c0000gn/T/2020417-25164-5jyjzb.7az7m/TestApp.app'
+[debug] ?[35m[BaseDriver]?[39m Event 'appConfigured' logged at 1589706438384 (12:07:18 GMT+0300 (Eastern European Summer Time))
+[debug] ?[35m[XCUITest]?[39m Checking whether app '/var/folders/d_/4fj98lg114zg894kw4ngrn7c0000gn/T/2020417-25164-5jyjzb.7az7m/TestApp.app' is actually present on file system
+[debug] ?[35m[XCUITest]?[39m App is present
+[debug] ?[35m[iOS]?[39m Getting bundle ID from app '/var/folders/d_/4fj98lg114zg894kw4ngrn7c0000gn/T/2020417-25164-5jyjzb.7az7m/TestApp.app': 'io.appium.TestApp'
+[debug] ?[35m[BaseDriver]?[39m Event 'resetStarted' logged at 1589706438386 (12:07:18 GMT+0300 (Eastern European Summer Time))
+?[35m[XCUITest]?[39m Not scrubbing third party app in anticipation of uninstall
+[debug] ?[35m[BaseDriver]?[39m Event 'resetComplete' logged at 1589706438518 (12:07:18 GMT+0300 (Eastern European Summer Time))
+?[35m[XCUITest]?[39m Continuing without capturing device logs: iOS Simulator with udid '2FC4280D-EB6C-4306-B76A-82B6D37CFD1B' is not running
+?[35m[XCUITest]?[39m Setting up simulator
+[debug] ?[35m[iOS]?[39m No reason to set locale
+[debug] ?[35m[iOS]?[39m No iOS / app preferences to set
+[debug] ?[35m[iOS]?[39m Setting did not need to be updated
+[debug] ?[35m[iOSSim]?[39m Setting preferences of 2FC4280D-EB6C-4306-B76A-82B6D37CFD1B Simulator to {"ConnectHardwareKeyboard":false}
+[debug] ?[35m[iOSSim]?[39m Setting common Simulator preferences to {"RotateWindowWhenSignaledByGuest":true,"ConnectHardwareKeyboard":false}
+[debug] ?[35m[iOSSim]?[39m Updated 2FC4280D-EB6C-4306-B76A-82B6D37CFD1B Simulator preferences at '/Users/dudynskyi/Library/Preferences/com.apple.iphonesimulator.plist' with {"DevicePreferences":{"2FC4280D-EB6C-4306-B76A-82B6D37CFD1B":{"ConnectHardwareKeyboard":false}},"RotateWindowWhenSignaledByGuest":true,"ConnectHardwareKeyboard":false}
+?[35m[iOSSim]?[39m Booting Simulator with UDID '2FC4280D-EB6C-4306-B76A-82B6D37CFD1B'...
+?[35m[iOSSim]?[39m Starting Simulator UI with command: open -Fn /Applications/Xcode.app/Contents/Developer/Applications/Simulator.app --args -CurrentDeviceUDID 2FC4280D-EB6C-4306-B76A-82B6D37CFD1B -RotateWindowWhenSignaledByGuest 1 -ConnectHardwareKeyboard 0 -PasteboardAutomaticSync 0
+?[35m[iOSSim]?[39m Simulator with UDID 2FC4280D-EB6C-4306-B76A-82B6D37CFD1B booted in 5.777s
+[debug] ?[35m[BaseDriver]?[39m Event 'simStarted' logged at 1589706444445 (12:07:24 GMT+0300 (Eastern European Summer Time))
+[debug] ?[35m[IOSSimulatorLog]?[39m Starting log capture for iOS Simulator with udid '2FC4280D-EB6C-4306-B76A-82B6D37CFD1B' using simctl
+[debug] ?[35m[BaseDriver]?[39m Event 'logCaptureStarted' logged at 1589706445059 (12:07:25 GMT+0300 (Eastern European Summer Time))
+[debug] ?[35m[XCUITest]?[39m Verifying application platform
+[debug] ?[35m[XCUITest]?[39m CFBundleSupportedPlatforms: ["iPhoneSimulator"]
+[debug] ?[35m[XCUITest]?[39m Reset requested. Removing app with id 'io.appium.TestApp' from the device
+[debug] ?[35m[XCUITest]?[39m Installing '/var/folders/d_/4fj98lg114zg894kw4ngrn7c0000gn/T/2020417-25164-5jyjzb.7az7m/TestApp.app' on Simulator with UUID '2FC4280D-EB6C-4306-B76A-82B6D37CFD1B'...
+[debug] ?[35m[XCUITest]?[39m The app has been installed successfully.
+[debug] ?[35m[BaseDriver]?[39m Event 'appInstalled' logged at 1589706450128 (12:07:30 GMT+0300 (Eastern European Summer Time))
+?[35m[WebDriverAgent]?[39m Using WDA path: '/usr/local/lib/node_modules/appium/node_modules/appium-webdriveragent'
+?[35m[WebDriverAgent]?[39m Using WDA agent: '/usr/local/lib/node_modules/appium/node_modules/appium-webdriveragent/WebDriverAgent.xcodeproj'
+[debug] ?[35m[WebDriverAgent]?[39m No obsolete cached processes from previous WDA sessions listening on port 8100 have been found
+?[35m[DevCon Factory]?[39m Requesting connection for device 2FC4280D-EB6C-4306-B76A-82B6D37CFD1B on local port 8100, device port 8100
+[debug] ?[35m[DevCon Factory]?[39m Cached connections count: 0
+?[35m[DevCon Factory]?[39m Successfully requested the connection for 2FC4280D-EB6C-4306-B76A-82B6D37CFD1B:8100
+[debug] ?[35m[XCUITest]?[39m Starting WebDriverAgent initialization with the synchronization key 'XCUITestDriver'
+[debug] ?[35m[WD Proxy]?[39m Matched '/status' to command name 'getStatus'
+[debug] ?[35m[WD Proxy]?[39m Proxying [GET /status] to [GET http://127.0.0.1:8100/status] with no body
+?[35m[WD Proxy]?[39m Got response with unknown status: {"errno":"ECONNREFUSED","code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":8100}
+[debug] ?[35m[WebDriverAgent]?[39m WDA is not listening at 'http://127.0.0.1:8100/'
+[debug] ?[35m[WebDriverAgent]?[39m WDA is currently not running. There is nothing to cache
+[debug] ?[35m[XCUITest]?[39m Trying to start WebDriverAgent 2 times with 10000ms interval
+[debug] ?[35m[XCUITest]?[39m These values can be customized by changing wdaStartupRetries/wdaStartupRetryInterval capabilities
+[debug] ?[35m[BaseDriver]?[39m Event 'wdaStartAttempted' logged at 1589706450682 (12:07:30 GMT+0300 (Eastern European Summer Time))
+?[35m[WebDriverAgent]?[39m Launching WebDriverAgent on the device
+?[35m[WebDriverAgent]?[39m Fetching dependencies
+?[35m[WebDriverAgent]?[39m Installing/updating dependencies for platforms 'iOS', 'tvOS'
+[debug] ?[35m[WebDriverAgent]?[39m Please update to the latest Carthage version: 0.34.0. You currently are on 0.33.0
+[debug] ?[35m[WebDriverAgent]?[39m *** Checking out RoutingHTTPServer at "v1.2.2"
+[debug] ?[35m[WebDriverAgent]?[39m *** Checking out YYCache at "1.1.0"
+[debug] ?[35m[WebDriverAgent]?[39m *** xcodebuild output can be found in /var/folders/d_/4fj98lg114zg894kw4ngrn7c0000gn/T/carthage-xcodebuild.MqeiE0.log
+[debug] ?[35m[WebDriverAgent]?[39m *** Building scheme "RoutingHTTPServer tvOS" in RoutingHTTPServer.xcodeproj
+[debug] ?[35m[WebDriverAgent]?[39m *** Building scheme "RoutingHTTPServer iOS" in RoutingHTTPServer.xcodeproj
+[debug] ?[35m[WebDriverAgent]?[39m *** Building scheme "YYCache iOS" in YYCache.xcodeproj
+[debug] ?[35m[WebDriverAgent]?[39m *** Building scheme "YYCache tvOS" in YYCache.xcodeproj
+[debug] ?[35m[WebDriverAgent]?[39m Finished fetching dependencies
+[debug] ?[35m[WebDriverAgent]?[39m Cleaning the project scheme 'WebDriverAgentLib' to make sure there are no leftovers from previous installs
+[debug] ?[35m[WebDriverAgent]?[39m Cleaning the project scheme 'WebDriverAgentRunner' to make sure there are no leftovers from previous installs
+[debug] ?[35m[WebDriverAgent]?[39m Killing running processes 'xcodebuild.*2FC4280D-EB6C-4306-B76A-82B6D37CFD1B, 2FC4280D-EB6C-4306-B76A-82B6D37CFD1B.*XCTRunner, xctest.*2FC4280D-EB6C-4306-B76A-82B6D37CFD1B' for the device 2FC4280D-EB6C-4306-B76A-82B6D37CFD1B...
+[debug] ?[35m[WebDriverAgent]?[39m 'pgrep -if 2FC4280D-EB6C-4306-B76A-82B6D37CFD1B.*XCTRunner' didn't detect any matching processes. Return code: 1
+[debug] ?[35m[WebDriverAgent]?[39m 'pgrep -if xcodebuild.*2FC4280D-EB6C-4306-B76A-82B6D37CFD1B' didn't detect any matching processes. Return code: 1
+[debug] ?[35m[WebDriverAgent]?[39m 'pgrep -if xctest.*2FC4280D-EB6C-4306-B76A-82B6D37CFD1B' didn't detect any matching processes. Return code: 1
+[debug] ?[35m[WebDriverAgent]?[39m Beginning test with command 'xcodebuild build-for-testing test-without-building -project /usr/local/lib/node_modules/appium/node_modules/appium-webdriveragent/WebDriverAgent.xcodeproj -scheme WebDriverAgentRunner -destination id=2FC4280D-EB6C-4306-B76A-82B6D37CFD1B IPHONEOS_DEPLOYMENT_TARGET=11.3 GCC_TREAT_WARNINGS_AS_ERRORS=0 COMPILER_INDEX_STORE_ENABLE=NO' in directory '/usr/local/lib/node_modules/appium/node_modules/appium-webdriveragent'
+[debug] ?[35m[WebDriverAgent]?[39m Output from xcodebuild will only be logged if any errors are present there. To change this, use 'showXcodeLog' desired capability
+[debug] ?[35m[WebDriverAgent]?[39m Waiting up to 60000ms for WebDriverAgent to start
+[debug] ?[35m[WD Proxy]?[39m Matched '/status' to command name 'getStatus'
+[debug] ?[35m[WD Proxy]?[39m Proxying [GET /status] to [GET http://127.0.0.1:8100/status] with no body
+?[35m[WD Proxy]?[39m Got response with unknown status: {"errno":"ECONNREFUSED","code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":8100}
+[debug] ?[35m[WD Proxy]?[39m Matched '/status' to command name 'getStatus'
+[debug] ?[35m[WD Proxy]?[39m Proxying [GET /status] to [GET http://127.0.0.1:8100/status] with no body
+?[35m[WD Proxy]?[39m Got response with unknown status: {"errno":"ECONNREFUSED","code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":8100}
+[debug] ?[35m[WD Proxy]?[39m Matched '/status' to command name 'getStatus'
+[debug] ?[35m[WD Proxy]?[39m Proxying [GET /status] to [GET http://127.0.0.1:8100/status] with no body
+?[35m[WD Proxy]?[39m Got response with unknown status: {"errno":"ECONNREFUSED","code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":8100}
+[debug] ?[35m[WD Proxy]?[39m Matched '/status' to command name 'getStatus'
+[debug] ?[35m[WD Proxy]?[39m Proxying [GET /status] to [GET http://127.0.0.1:8100/status] with no body
+?[35m[WD Proxy]?[39m Got response with unknown status: {"errno":"ECONNREFUSED","code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":8100}
+[debug] ?[35m[WD Proxy]?[39m Matched '/status' to command name 'getStatus'
+[debug] ?[35m[WD Proxy]?[39m Proxying [GET /status] to [GET http://127.0.0.1:8100/status] with no body
+?[35m[WD Proxy]?[39m Got response with unknown status: {"errno":"ECONNREFUSED","code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":8100}
+[debug] ?[35m[WD Proxy]?[39m Matched '/status' to command name 'getStatus'
+[debug] ?[35m[WD Proxy]?[39m Proxying [GET /status] to [GET http://127.0.0.1:8100/status] with no body
+?[35m[WD Proxy]?[39m Got response with unknown status: {"errno":"ECONNREFUSED","code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":8100}
+[debug] ?[35m[WD Proxy]?[39m Matched '/status' to command name 'getStatus'
+[debug] ?[35m[WD Proxy]?[39m Proxying [GET /status] to [GET http://127.0.0.1:8100/status] with no body
+?[35m[WD Proxy]?[39m Got response with unknown status: {"errno":"ECONNREFUSED","code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":8100}
+[debug] ?[35m[WD Proxy]?[39m Matched '/status' to command name 'getStatus'
+[debug] ?[35m[WD Proxy]?[39m Proxying [GET /status] to [GET http://127.0.0.1:8100/status] with no body
+?[35m[WD Proxy]?[39m Got response with unknown status: {"errno":"ECONNREFUSED","code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":8100}
+[debug] ?[35m[WD Proxy]?[39m Matched '/status' to command name 'getStatus'
+[debug] ?[35m[WD Proxy]?[39m Proxying [GET /status] to [GET http://127.0.0.1:8100/status] with no body
+?[35m[WD Proxy]?[39m Got response with unknown status: {"errno":"ECONNREFUSED","code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":8100}
+[debug] ?[35m[WD Proxy]?[39m Matched '/status' to command name 'getStatus'
+[debug] ?[35m[WD Proxy]?[39m Proxying [GET /status] to [GET http://127.0.0.1:8100/status] with no body
+?[35m[WD Proxy]?[39m Got response with unknown status: {"errno":"ECONNREFUSED","code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":8100}
+[debug] ?[35m[WD Proxy]?[39m Matched '/status' to command name 'getStatus'
+[debug] ?[35m[WD Proxy]?[39m Proxying [GET /status] to [GET http://127.0.0.1:8100/status] with no body
+?[35m[WD Proxy]?[39m Got response with unknown status: {"errno":"ECONNREFUSED","code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":8100}
+[debug] ?[35m[WD Proxy]?[39m Matched '/status' to command name 'getStatus'
+[debug] ?[35m[WD Proxy]?[39m Proxying [GET /status] to [GET http://127.0.0.1:8100/status] with no body
+?[35m[WD Proxy]?[39m Got response with unknown status: {"errno":"ECONNREFUSED","code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":8100}
+[debug] ?[35m[WD Proxy]?[39m Matched '/status' to command name 'getStatus'
+[debug] ?[35m[WD Proxy]?[39m Proxying [GET /status] to [GET http://127.0.0.1:8100/status] with no body
+?[35m[WD Proxy]?[39m Got response with unknown status: {"errno":"ECONNREFUSED","code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":8100}
+[debug] ?[35m[WD Proxy]?[39m Matched '/status' to command name 'getStatus'
+[debug] ?[35m[WD Proxy]?[39m Proxying [GET /status] to [GET http://127.0.0.1:8100/status] with no body
+?[35m[WD Proxy]?[39m Got response with unknown status: {"errno":"ECONNREFUSED","code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":8100}
+[debug] ?[35m[WD Proxy]?[39m Matched '/status' to command name 'getStatus'
+[debug] ?[35m[WD Proxy]?[39m Proxying [GET /status] to [GET http://127.0.0.1:8100/status] with no body
+?[35m[WD Proxy]?[39m Got response with unknown status: {"errno":"ECONNREFUSED","code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":8100}
+[debug] ?[35m[WD Proxy]?[39m Matched '/status' to command name 'getStatus'
+[debug] ?[35m[WD Proxy]?[39m Proxying [GET /status] to [GET http://127.0.0.1:8100/status] with no body
+?[35m[WD Proxy]?[39m Got response with unknown status: {"errno":"ECONNREFUSED","code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":8100}
+[debug] ?[35m[WD Proxy]?[39m Matched '/status' to command name 'getStatus'
+[debug] ?[35m[WD Proxy]?[39m Proxying [GET /status] to [GET http://127.0.0.1:8100/status] with no body
+?[35m[WD Proxy]?[39m Got response with unknown status: {"errno":"ECONNREFUSED","code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":8100}
+[debug] ?[35m[WD Proxy]?[39m Matched '/status' to command name 'getStatus'
+[debug] ?[35m[WD Proxy]?[39m Proxying [GET /status] to [GET http://127.0.0.1:8100/status] with no body
+?[35m[WD Proxy]?[39m Got response with unknown status: {"errno":"ECONNREFUSED","code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":8100}
+[debug] ?[35m[WD Proxy]?[39m Matched '/status' to command name 'getStatus'
+[debug] ?[35m[WD Proxy]?[39m Proxying [GET /status] to [GET http://127.0.0.1:8100/status] with no body
+?[35m[WD Proxy]?[39m Got response with unknown status: {"errno":"ECONNREFUSED","code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":8100}
+[debug] ?[35m[WD Proxy]?[39m Matched '/status' to command name 'getStatus'
+[debug] ?[35m[WD Proxy]?[39m Proxying [GET /status] to [GET http://127.0.0.1:8100/status] with no body
+?[35m[WD Proxy]?[39m Got response with unknown status: {"errno":"ECONNREFUSED","code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":8100}
+[debug] ?[35m[WD Proxy]?[39m Matched '/status' to command name 'getStatus'
+[debug] ?[35m[WD Proxy]?[39m Proxying [GET /status] to [GET http://127.0.0.1:8100/status] with no body
+?[35m[WD Proxy]?[39m Got response with unknown status: {"errno":"ECONNREFUSED","code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":8100}
+[debug] ?[35m[WD Proxy]?[39m Matched '/status' to command name 'getStatus'
+[debug] ?[35m[WD Proxy]?[39m Proxying [GET /status] to [GET http://127.0.0.1:8100/status] with no body
+?[35m[WD Proxy]?[39m Got response with unknown status: {"errno":"ECONNREFUSED","code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":8100}
+[debug] ?[35m[WD Proxy]?[39m Matched '/status' to command name 'getStatus'
+[debug] ?[35m[WD Proxy]?[39m Proxying [GET /status] to [GET http://127.0.0.1:8100/status] with no body
+?[35m[WD Proxy]?[39m Got response with unknown status: {"errno":"ECONNREFUSED","code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":8100}
+[debug] ?[35m[WD Proxy]?[39m Matched '/status' to command name 'getStatus'
+[debug] ?[35m[WD Proxy]?[39m Proxying [GET /status] to [GET http://127.0.0.1:8100/status] with no body
+?[35m[WD Proxy]?[39m Got response with unknown status: {"errno":"ECONNREFUSED","code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":8100}
+[debug] ?[35m[WD Proxy]?[39m Matched '/status' to command name 'getStatus'
+[debug] ?[35m[WD Proxy]?[39m Proxying [GET /status] to [GET http://127.0.0.1:8100/status] with no body
+?[35m[WD Proxy]?[39m Got response with unknown status: {"errno":"ECONNREFUSED","code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":8100}
+[debug] ?[35m[WebDriverAgent]?[39m Log file for xcodebuild test: /Users/dudynskyi/Library/Developer/Xcode/DerivedData/WebDriverAgent-ciegwgvxzxdrqthilmrmczmqvrgu/Logs/Test/Test-WebDriverAgentRunner-2020.05.17_12-08-52-+0300.xcresult/Staging/2_Test/Diagnostics/WebDriverAgentRunner-3CF61BDA-E1BD-4FC4-8546-B13C82ABAED4/WebDriverAgentRunner-C4185695-0392-4AB1-B9E2-E13810B3EB84/Session-WebDriverAgentRunner-2020-05-17_120916-ZEBamP.log
+[debug] ?[35m[WD Proxy]?[39m Matched '/status' to command name 'getStatus'
+[debug] ?[35m[WD Proxy]?[39m Proxying [GET /status] to [GET http://127.0.0.1:8100/status] with no body
+?[35m[WD Proxy]?[39m Got response with unknown status: {"errno":"ECONNREFUSED","code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":8100}
+[debug] ?[35m[WD Proxy]?[39m Matched '/status' to command name 'getStatus'
+[debug] ?[35m[WD Proxy]?[39m Proxying [GET /status] to [GET http://127.0.0.1:8100/status] with no body
+?[35m[WD Proxy]?[39m Got response with unknown status: {"errno":"ECONNREFUSED","code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":8100}
+[debug] ?[35m[WD Proxy]?[39m Matched '/status' to command name 'getStatus'
+[debug] ?[35m[WD Proxy]?[39m Proxying [GET /status] to [GET http://127.0.0.1:8100/status] with no body
+?[35m[WD Proxy]?[39m Got response with unknown status: {"errno":"ECONNREFUSED","code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":8100}
+[debug] ?[35m[WD Proxy]?[39m Matched '/status' to command name 'getStatus'
+[debug] ?[35m[WD Proxy]?[39m Proxying [GET /status] to [GET http://127.0.0.1:8100/status] with no body
+?[35m[WD Proxy]?[39m Got response with unknown status: {"errno":"ECONNREFUSED","code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":8100}
+[debug] ?[35m[WD Proxy]?[39m Matched '/status' to command name 'getStatus'
+[debug] ?[35m[WD Proxy]?[39m Proxying [GET /status] to [GET http://127.0.0.1:8100/status] with no body
+[debug] ?[35m[WD Proxy]?[39m Got response with status 200: {
+[debug] ?[35m[WD Proxy]?[39m   "value" : {
+[debug] ?[35m[WD Proxy]?[39m     "message" : "WebDriverAgent is ready to accept commands",
+[debug] ?[35m[WD Proxy]?[39m     "state" : "success",
+[debug] ?[35m[WD Proxy]?[39m     "os" : {
+[debug] ?[35m[WD Proxy]?[39m       "name" : "iOS",
+[debug] ?[35m[WD Proxy]?[39m       "version" : "13.3",
+[debug] ?[35m[WD Proxy]?[39m       "sdkVersion" : "13.0"
+[debug] ?[35m[WD Proxy]?[39m     },
+[debug] ?[35m[WD Proxy]?[39m     "ios" : {
+[debug] ?[35m[WD Proxy]?[39m       "simulatorVersion" : "13.3",
+[debug] ?[35m[WD Proxy]?[39m       "ip" : "192.168.0.103"
+[debug] ?[35m[WD Proxy]?[39m     },
+[debug] ?[35m[WD Proxy]?[39m     "ready" : true,
+[debug] ?[35m[WD Proxy]?[39m     "build" : {
+[debug] ?[35m[WD Proxy]?[39m       "upgradedAt" : "1589706527213",
+[debug] ?[35m[WD Proxy]?[39m       "time" : "May 17 2020 12:09:00",
+[debug] ?[35m[WD Proxy]?[39m       "productBundleIdentifier" : "com.facebook.WebDriverAgentRunner"
+[debug] ?[35m[WD Proxy]?[39m     }
+[debug] ?[35m[WD Proxy]?[39m   },
+[debug] ?[35m[WD Proxy]?[39m   "sessionId" : "D53EB1CD-A26E-40EB-8754-176C8E1D1D2F"
+[debug] ?[35m[WD Proxy]?[39m }
+[debug] ?[35m[WebDriverAgent]?[39m WebDriverAgent information:
+[debug] ?[35m[WebDriverAgent]?[39m {
+[debug] ?[35m[WebDriverAgent]?[39m   "message": "WebDriverAgent is ready to accept commands",
+[debug] ?[35m[WebDriverAgent]?[39m   "state": "success",
+[debug] ?[35m[WebDriverAgent]?[39m   "os": {
+[debug] ?[35m[WebDriverAgent]?[39m     "name": "iOS",
+[debug] ?[35m[WebDriverAgent]?[39m     "version": "13.3",
+[debug] ?[35m[WebDriverAgent]?[39m     "sdkVersion": "13.0"
+[debug] ?[35m[WebDriverAgent]?[39m   },
+[debug] ?[35m[WebDriverAgent]?[39m   "ios": {
+[debug] ?[35m[WebDriverAgent]?[39m     "simulatorVersion": "13.3",
+[debug] ?[35m[WebDriverAgent]?[39m     "ip": "192.168.0.103"
+[debug] ?[35m[WebDriverAgent]?[39m   },
+[debug] ?[35m[WebDriverAgent]?[39m   "ready": true,
+[debug] ?[35m[WebDriverAgent]?[39m   "build": {
+[debug] ?[35m[WebDriverAgent]?[39m     "upgradedAt": "1589706527213",
+[debug] ?[35m[WebDriverAgent]?[39m     "time": "May 17 2020 12:09:00",
+[debug] ?[35m[WebDriverAgent]?[39m     "productBundleIdentifier": "com.facebook.WebDriverAgentRunner"
+[debug] ?[35m[WebDriverAgent]?[39m   }
+[debug] ?[35m[WebDriverAgent]?[39m }
+[debug] ?[35m[WebDriverAgent]?[39m WebDriverAgent successfully started after 29862ms
+[debug] ?[35m[BaseDriver]?[39m Event 'wdaSessionAttempted' logged at 1589706560625 (12:09:20 GMT+0300 (Eastern European Summer Time))
+[debug] ?[35m[XCUITest]?[39m Sending createSession command to WDA
+[debug] ?[35m[WD Proxy]?[39m Matched '/session' to command name 'createSession'
+[debug] ?[35m[WD Proxy]?[39m Proxying [POST /session] to [POST http://127.0.0.1:8100/session] with body: {"capabilities":{"firstMatch":[{"bundleId":"io.appium.TestApp","arguments":[],"environment":{},"eventloopIdleDelaySec":0,"shouldWaitForQuiescence":true,"shouldUseTestManagerForVisibilityDetection":false,"maxTypingFrequency":60,"shouldUseSingletonTestManager":true}],"alwaysMatch":{}}}
+[debug] ?[35m[WD Proxy]?[39m Got response with status 200: {"value":{"sessionId":"5F252AA3-C60C-41E5-8737-638F031FB18A","capabilities":{"device":"iphone","browserName":"TestApp","sdkVersion":"13.3","CFBundleIdentifier":"io.appium.TestApp"}},"sessionId":"5F252AA3-C60C-41E5-8737-638F031FB18A"}
+?[35m[WD Proxy]?[39m Determined the downstream protocol as 'W3C'
+[debug] ?[35m[BaseDriver]?[39m Event 'wdaSessionStarted' logged at 1589706567518 (12:09:27 GMT+0300 (Eastern European Summer Time))
+[debug] ?[35m[BaseDriver]?[39m Event 'wdaStarted' logged at 1589706567518 (12:09:27 GMT+0300 (Eastern European Summer Time))
+?[35m[XCUITest]?[39m Skipping setting of the initial display orientation. Set the "orientation" capability to either "LANDSCAPE" or "PORTRAIT", if this is an undesired behavior.
+[debug] ?[35m[BaseDriver]?[39m Event 'orientationSet' logged at 1589706567519 (12:09:27 GMT+0300 (Eastern European Summer Time))
+[debug] ?[35m[BaseDriver]?[39m The value of 'elementResponseAttributes' setting did not change. Skipping the update for it
+[debug] ?[35m[BaseDriver]?[39m The value of 'shouldUseCompactResponses' setting did not change. Skipping the update for it
+?[35m[Appium]?[39m New XCUITestDriver session created successfully, session f8c55606-a02e-4b57-98cd-0576a6a1a455 added to master session list
+[debug] ?[35m[BaseDriver]?[39m Event 'newSessionStarted' logged at 1589706567520 (12:09:27 GMT+0300 (Eastern European Summer Time))
+[debug] ?[35m[W3C (f8c55606)]?[39m Cached the protocol value 'W3C' for the new session f8c55606-a02e-4b57-98cd-0576a6a1a455
+[debug] ?[35m[W3C (f8c55606)]?[39m Responding to client with driver.createSession() result: {"capabilities":{"webStorageEnabled":false,"locationContextEnabled":false,"browserName":"","platform":"MAC","javascriptEnabled":true,"databaseEnabled":false,"takesScreenshot":true,"networkConnectionEnabled":false,"platformName":"ios","app":"/Users/dudynskyi/IdeaProjects/AQA-homeworks/intro-to-appium-hw/TestApp.app.zip","automationName":"XCuiTest","deviceName":"iPhone 11 (13.3)","platformVersion":"11.3.1","udid":"2FC4280D-EB6C-4306-B76A-82B6D37CFD1B"}}
+?[35m[HTTP]?[39m ?[37m<-- POST /wd/hub/session ?[39m?[32m200?[39m ?[90m130139 ms - 516?[39m
+?[35m[HTTP]?[39m ?[90m?[39m
+?[35m[HTTP]?[39m ?[37m-->?[39m ?[37mGET?[39m ?[37m/wd/hub/session/f8c55606-a02e-4b57-98cd-0576a6a1a455/context?[39m
+?[35m[HTTP]?[39m ?[90m{}?[39m
+[debug] ?[35m[W3C (f8c55606)]?[39m Calling AppiumDriver.getCurrentContext() with args: ["f8c55606-a02e-4b57-98cd-0576a6a1a455"]
+[debug] ?[35m[XCUITest]?[39m Executing command 'getCurrentContext'
+[debug] ?[35m[W3C (f8c55606)]?[39m Responding to client with driver.getCurrentContext() result: "NATIVE_APP"
+?[35m[HTTP]?[39m ?[37m<-- GET /wd/hub/session/f8c55606-a02e-4b57-98cd-0576a6a1a455/context ?[39m?[32m200?[39m ?[90m6 ms - 22?[39m
+?[35m[HTTP]?[39m ?[90m?[39m
+?[35m[HTTP]?[39m ?[37m-->?[39m ?[37mPOST?[39m ?[37m/wd/hub/session/f8c55606-a02e-4b57-98cd-0576a6a1a455/element?[39m
+?[35m[HTTP]?[39m ?[90m{"using":"-ios predicate string","value":"name == 'IntegerA'"}?[39m
+[debug] ?[35m[W3C (f8c55606)]?[39m Calling AppiumDriver.findElement() with args: ["-ios predicate string","name == 'IntegerA'","f8c55606-a02e-4b57-98cd-0576a6a1a455"]
+[debug] ?[35m[XCUITest]?[39m Executing command 'findElement'
+[debug] ?[35m[BaseDriver]?[39m Valid locator strategies for this request: xpath, id, name, class name, -ios predicate string, -ios class chain, accessibility id
+[debug] ?[35m[BaseDriver]?[39m Waiting up to 0 ms for condition
+[debug] ?[35m[WD Proxy]?[39m Matched '/element' to command name 'findElement'
+[debug] ?[35m[WD Proxy]?[39m Proxying [POST /element] to [POST http://127.0.0.1:8100/session/5F252AA3-C60C-41E5-8737-638F031FB18A/element] with body: {"using":"predicate string","value":"name == 'IntegerA'"}
+[debug] ?[35m[WD Proxy]?[39m Got response with status 200: {"value":{"ELEMENT":"0A000000-0000-0000-5468-000000000000","element-6066-11e4-a52e-4f735466cecf":"0A000000-0000-0000-5468-000000000000"},"sessionId":"5F252AA3-C60C-41E5-8737-638F031FB18A"}
+[debug] ?[35m[W3C (f8c55606)]?[39m Responding to client with driver.findElement() result: {"element-6066-11e4-a52e-4f735466cecf":"0A000000-0000-0000-5468-000000000000","ELEMENT":"0A000000-0000-0000-5468-000000000000"}
+?[35m[HTTP]?[39m ?[37m<-- POST /wd/hub/session/f8c55606-a02e-4b57-98cd-0576a6a1a455/element ?[39m?[32m200?[39m ?[90m132 ms - 137?[39m
+?[35m[HTTP]?[39m ?[90m?[39m
+?[35m[HTTP]?[39m ?[37m-->?[39m ?[37mPOST?[39m ?[37m/wd/hub/session/f8c55606-a02e-4b57-98cd-0576a6a1a455/element/0A000000-0000-0000-5468-000000000000/value?[39m
+?[35m[HTTP]?[39m ?[90m{"id":"0A000000-0000-0000-5468-000000000000","text":"text","value":["t","e","x","t"]}?[39m
+[debug] ?[35m[W3C (f8c55606)]?[39m Calling AppiumDriver.setValue() with args: [["t","e","x","t"],"0A000000-0000-0000-5468-000000000000","f8c55606-a02e-4b57-98cd-0576a6a1a455"]
+[debug] ?[35m[XCUITest]?[39m Executing command 'setValue'
+[debug] ?[35m[WD Proxy]?[39m Matched '/element/0A000000-0000-0000-5468-000000000000/value' to command name 'setValue'
+[debug] ?[35m[Protocol Converter]?[39m Added 'text' property "text" to 'setValue' request body
+[debug] ?[35m[WD Proxy]?[39m Proxying [POST /element/0A000000-0000-0000-5468-000000000000/value] to [POST http://127.0.0.1:8100/session/5F252AA3-C60C-41E5-8737-638F031FB18A/element/0A000000-0000-0000-5468-000000000000/value] with body: {"value":["t","e","x","t"],"text":"text"}
+[debug] ?[35m[WD Proxy]?[39m Got response with status 200: {"value":null,"sessionId":"5F252AA3-C60C-41E5-8737-638F031FB18A"}
+[debug] ?[35m[W3C (f8c55606)]?[39m Responding to client with driver.setValue() result: null
+?[35m[HTTP]?[39m ?[37m<-- POST /wd/hub/session/f8c55606-a02e-4b57-98cd-0576a6a1a455/element/0A000000-0000-0000-5468-000000000000/value ?[39m?[32m200?[39m ?[90m1931 ms - 14?[39m
+?[35m[HTTP]?[39m ?[90m?[39m
+?[35m[HTTP]?[39m ?[37m-->?[39m ?[37mGET?[39m ?[37m/wd/hub/session/f8c55606-a02e-4b57-98cd-0576a6a1a455/context?[39m
+?[35m[HTTP]?[39m ?[90m{}?[39m
+[debug] ?[35m[W3C (f8c55606)]?[39m Calling AppiumDriver.getCurrentContext() with args: ["f8c55606-a02e-4b57-98cd-0576a6a1a455"]
+[debug] ?[35m[XCUITest]?[39m Executing command 'getCurrentContext'
+[debug] ?[35m[W3C (f8c55606)]?[39m Responding to client with driver.getCurrentContext() result: "NATIVE_APP"
+?[35m[HTTP]?[39m ?[37m<-- GET /wd/hub/session/f8c55606-a02e-4b57-98cd-0576a6a1a455/context ?[39m?[32m200?[39m ?[90m2 ms - 22?[39m
+?[35m[HTTP]?[39m ?[90m?[39m
+?[35m[HTTP]?[39m ?[37m-->?[39m ?[37mPOST?[39m ?[37m/wd/hub/session/f8c55606-a02e-4b57-98cd-0576a6a1a455/element?[39m
+?[35m[HTTP]?[39m ?[90m{"using":"-ios predicate string","value":"name == 'IntegerA'"}?[39m
+[debug] ?[35m[W3C (f8c55606)]?[39m Calling AppiumDriver.findElement() with args: ["-ios predicate string","name == 'IntegerA'","f8c55606-a02e-4b57-98cd-0576a6a1a455"]
+[debug] ?[35m[XCUITest]?[39m Executing command 'findElement'
+[debug] ?[35m[BaseDriver]?[39m Valid locator strategies for this request: xpath, id, name, class name, -ios predicate string, -ios class chain, accessibility id
+[debug] ?[35m[BaseDriver]?[39m Waiting up to 0 ms for condition
+[debug] ?[35m[WD Proxy]?[39m Matched '/element' to command name 'findElement'
+[debug] ?[35m[WD Proxy]?[39m Proxying [POST /element] to [POST http://127.0.0.1:8100/session/5F252AA3-C60C-41E5-8737-638F031FB18A/element] with body: {"using":"predicate string","value":"name == 'IntegerA'"}
+[debug] ?[35m[WD Proxy]?[39m Got response with status 200: {"value":{"ELEMENT":"0A000000-0000-0000-5468-000000000000","element-6066-11e4-a52e-4f735466cecf":"0A000000-0000-0000-5468-000000000000"},"sessionId":"5F252AA3-C60C-41E5-8737-638F031FB18A"}
+[debug] ?[35m[W3C (f8c55606)]?[39m Responding to client with driver.findElement() result: {"element-6066-11e4-a52e-4f735466cecf":"0A000000-0000-0000-5468-000000000000","ELEMENT":"0A000000-0000-0000-5468-000000000000"}
+?[35m[HTTP]?[39m ?[37m<-- POST /wd/hub/session/f8c55606-a02e-4b57-98cd-0576a6a1a455/element ?[39m?[32m200?[39m ?[90m195 ms - 137?[39m
+?[35m[HTTP]?[39m ?[90m?[39m
+?[35m[HTTP]?[39m ?[37m-->?[39m ?[37mGET?[39m ?[37m/wd/hub/session/f8c55606-a02e-4b57-98cd-0576a6a1a455/element/0A000000-0000-0000-5468-000000000000/text?[39m
+?[35m[HTTP]?[39m ?[90m{}?[39m
+?[35m[W3C (f8c55606)]?[39m Driver proxy active, passing request on via HTTP proxy
+[debug] ?[35m[XCUITest]?[39m Executing command 'proxyReqRes'
+[debug] ?[35m[WD Proxy]?[39m Matched '/wd/hub/session/f8c55606-a02e-4b57-98cd-0576a6a1a455/element/0A000000-0000-0000-5468-000000000000/text' to command name 'getText'
+[debug] ?[35m[WD Proxy]?[39m Proxying [GET /wd/hub/session/f8c55606-a02e-4b57-98cd-0576a6a1a455/element/0A000000-0000-0000-5468-000000000000/text] to [GET http://127.0.0.1:8100/session/5F252AA3-C60C-41E5-8737-638F031FB18A/element/0A000000-0000-0000-5468-000000000000/text] with body: {}
+[debug] ?[35m[WD Proxy]?[39m Got response with status 200: {
+[debug] ?[35m[WD Proxy]?[39m   "value" : "text",
+[debug] ?[35m[WD Proxy]?[39m   "sessionId" : "5F252AA3-C60C-41E5-8737-638F031FB18A"
+[debug] ?[35m[WD Proxy]?[39m }
+?[35m[WD Proxy]?[39m Replacing sessionId 5F252AA3-C60C-41E5-8737-638F031FB18A with f8c55606-a02e-4b57-98cd-0576a6a1a455
+?[35m[HTTP]?[39m ?[37m<-- GET /wd/hub/session/f8c55606-a02e-4b57-98cd-0576a6a1a455/element/0A000000-0000-0000-5468-000000000000/text ?[39m?[32m200?[39m ?[90m154 ms - 67?[39m
+?[35m[HTTP]?[39m ?[90m?[39m
+]]></system-out>
+  <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+May 17, 2020 12:09:27 PM io.appium.java_client.remote.AppiumCommandExecutor$1 lambda$0
+INFO: Detected dialect: W3C
+]]></system-err>
+</testsuite>
