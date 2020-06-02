@@ -40,11 +40,12 @@ public class SumAverage {
    * @return average of integers
    */
   public static double average(int lowerBound, int upperBound) {
-    double avg = 0;
-    if (lowerBound <= upperBound) {
-      avg = (double) (lowerBound + upperBound) / 2;
+    int i = 0;
+    while (lowerBound <= upperBound) {
+      lowerBound++;
+      i++;
     }
-    return avg;
+    return (double) (lowerBound + upperBound - i ) / 2;
   }
 
   /**
